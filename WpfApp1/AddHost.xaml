@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfApp1.AddHost"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HeadHost">
+
+    <Grid Background="AntiqueWhite" Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content=":שם פרטי" HorizontalAlignment="Left" Height="32" Margin="643,24,0,0" VerticalAlignment="Top" Width="136" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.594"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content=":שם משפחה" HorizontalAlignment="Left" Height="34" Margin="637,64,0,0" VerticalAlignment="Top" Width="127" Grid.ColumnSpan="2"/>
+        <Label Content=":מספר טלפון" HorizontalAlignment="Left" Height="32" Margin="637,108,0,0" VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
+        <Label Content=":כתובת מייל " HorizontalAlignment="Left" Height="34" Margin="637,152,0,0" VerticalAlignment="Top" Width="116" Grid.ColumnSpan="2"/>
+        <Label Content=":מספר חשבון בנק" HorizontalAlignment="Left" Height="30" Margin="631,196,0,0" VerticalAlignment="Top" Width="104" Grid.ColumnSpan="2"/>
+        <TextBox Name="privatename" HorizontalAlignment="Left" Height="26" Margin="543,29,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
+        <TextBox Name="familyname" HorizontalAlignment="Left" Height="25" Margin="543,64,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
+        <TextBox   Name="numberphone" HorizontalAlignment="Left" Height="23" Margin="543,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
+        <TextBox Name="emailaddres" HorizontalAlignment="Left" Height="23" Margin="543,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
+        <TextBox Name="banknumber" HorizontalAlignment="Left" Height="30" Margin="543,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="83"  Grid.ColumnSpan="2"/>
+        <CheckBox Name="collectionClearance" Content="אישור גביה מחשבון הבנק" HorizontalAlignment="Left" Height="19" Margin="569,243,0,0" VerticalAlignment="Top" Width="166"  Grid.ColumnSpan="2"/>
+        <Button Content="הוספה וחזרה לדף בית" HorizontalAlignment="Left" Height="48" Margin="361,316,0,0" VerticalAlignment="Top" Width="141" Click="Button_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+
+</Page>

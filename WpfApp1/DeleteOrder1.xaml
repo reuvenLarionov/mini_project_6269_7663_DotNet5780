@@ -1,0 +1,17 @@
+﻿<Page x:Class="WpfApp1.DeleteOrder1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UpDateOrder">
+
+    <Grid Background="AntiqueWhite">
+        <Button Content="מחיקת הזמנה" HorizontalAlignment="Left" FontSize="25" Height="57" Margin="301,364,0,0" VerticalAlignment="Top" Width="205" Click="Button_Click"/>
+        <Label Content="בבקשה הכנס את מספר תעודת הזהות שלך" FontSize="40" HorizontalAlignment="Left" Height="75" Margin="23,120,0,0" VerticalAlignment="Top" Width="754"/>
+        <TextBox Name="id" HorizontalAlignment="Left" Height="62" Margin="23,243,0,0" TextWrapping="Wrap" FontSize="40" VerticalAlignment="Top" Width="754"/>
+
+    </Grid>
+</Page>

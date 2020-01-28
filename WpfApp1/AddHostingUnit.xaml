@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfApp1.AddHostingUnit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddHostingUnit">
+
+    <Grid Background="AntiqueWhite">
+        <Label   Content=":מספר מזהה מארח " HorizontalAlignment="Left" Height="31" Margin="664,21,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label   Content=":שם יחידת הדיור " HorizontalAlignment="Left" Height="30" Margin="679,69,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox Name="owner" HorizontalAlignment="Left" Height="28" Margin="537,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109" />
+        <TextBox Name="hostingUnitName" HorizontalAlignment="Left" Height="28" Margin="536,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <Label  Content=":אזור" HorizontalAlignment="Left" Height="33" Margin="679,104,0,0" VerticalAlignment="Top" Width="98"/>
+        <ComboBox Name="area" HorizontalAlignment="Left" Height="24" Margin="536,113,0,0" VerticalAlignment="Top" Width="109" />
+        <Label Content=":סוג בית הארחה" HorizontalAlignment="Left" Height="31" Margin="679,160,0,0" VerticalAlignment="Top" Width="98"/>
+        <ComboBox Name="type" HorizontalAlignment="Left" Height="24" Margin="536,160,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label Content=":מספר מבוגרים" HorizontalAlignment="Left" Height="30" Margin="679,205,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox Name="adultNum" HorizontalAlignment="Left" Height="28" Margin="536,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <Label Content=":מספר ילדים" HorizontalAlignment="Left" Height="32" Margin="679,251,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox Name="childNum" HorizontalAlignment="Left" Height="28" Margin="536,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <CheckBox Name="pool" Content=":בריכה" HorizontalAlignment="Left" Height="28" Margin="391,26,0,0" VerticalAlignment="Top" Width="91"/>
+        <CheckBox Name="jacuzzi" Content=":גקוז'י" HorizontalAlignment="Left" Height="28" Margin="391,69,0,0" VerticalAlignment="Top" Width="71"/>
+        <CheckBox Name="wifi" Content=":WI-FI" HorizontalAlignment="Left" Height="28" Margin="391,104,0,0" VerticalAlignment="Top" Width="71"/>
+        <CheckBox Name="disabledAccessible"  Content="נגישות לנכים" HorizontalAlignment="Left" Height="28" Margin="391,137,0,0" VerticalAlignment="Top" Width="91"/>
+        <CheckBox Name="view" Content=":נוף" HorizontalAlignment="Left" Height="28" Margin="391,170,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Content=":מחיר ללילה" HorizontalAlignment="Left" Height="30" Margin="679,299,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox Name="moneyForNight" HorizontalAlignment="Left" Height="28" Margin="536,299,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <Label Content=":כתובת בית הארחה" HorizontalAlignment="Left" Height="31" Margin="679,348,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox Name="city" HorizontalAlignment="Left" Height="28" Margin="589,348,0,0" TextWrapping="Wrap" Text="עיר" VerticalAlignment="Top" Width="56"/>
+        <TextBox Name="street" HorizontalAlignment="Left" Height="28" Margin="513,348,0,0" TextWrapping="Wrap" Text="רחוב" VerticalAlignment="Top" Width="59"/>
+        <TextBox Name="appnum" HorizontalAlignment="Left" Height="28" Margin="417,348,0,0" TextWrapping="Wrap" Text="מספר דירה" VerticalAlignment="Top" Width="75"/>
+        <Label Content=":תיאור דירה" HorizontalAlignment="Left" Height="30" Margin="391,205,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox Name="hostingUnitDescription" HorizontalAlignment="Left" Height="28" Margin="29,205,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="362"/>
+        <Button Content="הוסף יחידת אירוח" HorizontalAlignment="Left" Height="53" Margin="76,299,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
+
+    </Grid>
+</Page>
