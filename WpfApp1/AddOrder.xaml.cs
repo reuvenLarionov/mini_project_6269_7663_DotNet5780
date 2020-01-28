@@ -54,7 +54,6 @@ namespace WpfApp1
                     order.ownerFee=(order.orderReleaseDate.DayOfYear-order.orderEntryDate.DayOfYear)*Configuration.fee;
                     order.key = Configuration.orderSerialKey++;
                     order.guestRequestKey = int.Parse(string.Format("{0}", meyutar.Content));
-
                     break;
                 }
             }
